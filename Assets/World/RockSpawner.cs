@@ -8,7 +8,7 @@ using UnityEngine;
 
 public class RockSpawner : MonoBehaviour
 {
-    //This class handles the spawning of rocks as children of the track, to make the rocks move towards the player
+    // This class handles the spawning of rocks as children of the track, to make the rocks move towards the player
      
     // List which includes all the rock prefab variations 
     private List<GameObject> rockPrefabs = new List<GameObject>();
@@ -53,9 +53,9 @@ public class RockSpawner : MonoBehaviour
     private void SpawnRock()
     {
         // Random values in a fitting range
-        x_range = Random.Range(-48f, -45f);
-        y_range = Random.Range(-3f, 6f);
-        z_range = Random.Range(26f, 29f);
+        x_range = Random.Range(-49f, -44f);
+        y_range = Random.Range(-7f, 7f);
+        z_range = Random.Range(25f, 30f);
         
         // Offset with random values for the spawnpoint
         spawnOffset = new Vector3(x_range, y_range, z_range);
